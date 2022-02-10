@@ -5,9 +5,21 @@ body {
 
 h1 {
   font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h1,
+h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: Tahoma, sans-serif;
+  font-size: 20px;
+}
 .main-pict {
   display: block;
   margin-left: auto;
@@ -15,14 +27,54 @@ h1 {
   width: 60%;
 }
 
+.recipe-pict {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  text-align: center;
+  font-size: small;
+}
+
 hr {
   height: 2px;
   background-color: lemonchiffon;
+  margin-bottom: 5px;
 }
 
 /* https://www.geeksforgeeks.org/how-to-align-block-elements-to-center-using-css/ */
 .index-recipes ul li {
   display: inline-block;
   margin-left: 15%;
+  text-align: center;
+}
+
+.preamble p {
+  text-align: left;
+}
+
+.ingredients,
+.method {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: 10%;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+  border: solid;
+  border-width: 2px;
+}
+
+.ingredients {
+  border-bottom-width: 0;
+}
+.method {
+  border-top-width: 0.3px;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
   text-align: center;
 }
