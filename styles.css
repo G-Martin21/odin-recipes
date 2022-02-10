@@ -1,0 +1,28 @@
+body {
+  background-color: salmon;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.main-pict {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+hr {
+  height: 2px;
+  background-color: lemonchiffon;
+}
+
+/* https://www.geeksforgeeks.org/how-to-align-block-elements-to-center-using-css/ */
+.index-recipes ul li {
+  display: inline-block;
+  margin-left: 15%;
+  text-align: center;
+}
