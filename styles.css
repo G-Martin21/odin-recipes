@@ -24,6 +24,8 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  font-size: small;
   width: 60%;
 }
 
@@ -39,14 +41,34 @@ h3 {
 hr {
   height: 2px;
   background-color: lemonchiffon;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+/* https://redstapler.co/4-ways-to-center-div-css/
+
+  The third method is to use a combination of text-align and inline-block display. Simply add text-align 
+  center to parent div and set the child div display to inline-block.
+    .example-div {
+        display: inline-block;
+    }
+.   parent-div {
+        text-align: center;
+    }
+
+  This will force our div to behave like inline element and therefore subjected text-align center.
+   The difference between this method and margin: 0 auto is we don’t need the width to be specified. 
+   Then again, you can use it for vertical align. */
+
+.top-div {
+  text-align: center;
+}
+.child-div {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10%;
 }
 
-/* https://www.geeksforgeeks.org/how-to-align-block-elements-to-center-using-css/ */
-.index-recipes ul li {
-  display: inline-block;
-  margin-left: 15%;
-  text-align: center;
+.child-div.first-element {
+  margin-left: 0;
 }
 
 .preamble p {
